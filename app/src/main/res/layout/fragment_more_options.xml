@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MoreOptions">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/snakeBIteContact"
+            android:text="Snake Bite Contact"
+            style="@style/accountOptionView"/>
+
+        <TextView
+            android:id="@+id/ambulanceContact"
+            android:text="Ambulance Contact"
+            style="@style/accountOptionView"/>
+
+        <TextView
+            android:id="@+id/searchBloodDonner"
+            android:text="Search Blood donner"
+            style="@style/accountOptionView"/>
+
+        <TextView
+            android:id="@+id/nearbyHospitals"
+            android:text="Nearby Hospitals"
+            style="@style/accountOptionView"/>
+
+        <TextView
+            android:id="@+id/testHealth"
+            android:text="Test your Health"
+            style="@style/accountOptionView"/>
+
+        <TextView
+            android:id="@+id/testSleepQuality"
+            android:text="Test Sleep Quality"
+            style="@style/accountOptionView"/>
+
+    </LinearLayout>
+
+</ScrollView>

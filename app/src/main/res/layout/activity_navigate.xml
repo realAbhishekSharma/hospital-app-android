@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Navigate">
+
+
+    <TextView
+        android:id="@+id/snakeBiteContactHome"
+        android:text="Snake Bite Contact"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ambulanceContactHome"
+        android:text="Ambulance Contact"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/snakeBiteContactHome" />
+
+
+    <TextView
+        android:id="@+id/locateHospital"
+        android:text="Nearby Hospital"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ambulanceContactHome" />
+
+    <TextView
+        android:id="@+id/bloodDonner"
+        android:text="Blood Donner"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/locateHospital" />
+
+    <!--<Button
+        android:id="@+id/organDonner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Organ Donner"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/bloodDonner"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/bloodDonner"
+        app:layout_constraintTop_toBottomOf="@+id/bloodDonner" />-->
+
+    <TextView
+        android:id="@+id/getEnroll"
+        android:text="Enroll to Hospital"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/bloodDonner"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="@+id/bloodDonner"
+        app:layout_constraintTop_toBottomOf="@+id/bloodDonner" />
+
+    <TextView
+        android:id="@+id/login"
+        android:text="Login"
+        style="@style/homeButton"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="@+id/getEnroll"
+        app:layout_constraintStart_toStartOf="@+id/getEnroll"
+        app:layout_constraintTop_toBottomOf="@+id/getEnroll" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

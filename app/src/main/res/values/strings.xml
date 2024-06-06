@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">HospitalApp</string>
+<!--    <string name="ApiURL">http://192.168.10.4:3000</string>-->
+    <string name="ApiURL">http://192.168.110.127:3000</string>
+    <!--    <string name="ApiURL">http://192.168.1.80:3000</string>-->
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enrolled_qr_text">Qr code contains "Patient Id" and "Enroll Id"</string>
+    <string name="messageToBloodDonner">Note: Your contact will be public.</string>
+<!--    <string name="local">192.168.107.127</string>-->
+    <string name="local">192.168.110.127</string>
+
 </resources>

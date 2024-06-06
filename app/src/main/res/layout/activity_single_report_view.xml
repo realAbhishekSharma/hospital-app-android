@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="start"
+    tools:context=".SingleReportView">
+
+    <TextView
+        android:id="@+id/testNameReportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Test name"
+        android:layout_marginStart="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/testByReportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Test by"
+        android:layout_marginStart="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/sampleDateReportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Sample date"
+        android:layout_marginStart="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reportDateReportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Report date"
+        android:layout_marginStart="5dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/reportDescriptionReportView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20dp"
+        android:text="Result here"
+        android:layout_marginStart="5dp"
+        android:gravity="center"/>
+
+
+</LinearLayout>

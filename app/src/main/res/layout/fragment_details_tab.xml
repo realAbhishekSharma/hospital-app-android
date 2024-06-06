@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="top"
+    android:paddingBottom="40dp"
+    tools:context=".Fragment.DetailsTab">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:id="@+id/paymentStatusLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Status:"
+            android:textSize="18dp"
+            android:layout_marginEnd="5dp"/>
+
+        <TextView
+            android:id="@+id/paymentStatusCircleDetailsTab"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/status_circle"
+            android:backgroundTint="@color/red"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/payButtonDetailsTab"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@color/lightTransparent"
+        android:gravity="center"
+        android:text="Pay"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintTop_toTopOf="@id/paymentStatusLayout"
+        app:layout_constraintBottom_toBottomOf="@id/paymentStatusLayout"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/qrContainerLayoutDetailsTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/hideAndShowQrDetailsTab"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:gravity="center_horizontal">
+
+        <TextView
+            android:id="@+id/qrCodeView"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/qr_code"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="Neha Paudel"/>
+
+        <TextView
+            android:id="@+id/sendDataToEmpDetailsTab"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="8dp"
+            android:background="@color/lightTransparent"
+            android:text="Send"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hideAndShowQrDetailsTab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="^"
+        android:textSize="20dp"
+        android:background="@color/lightTransparent"
+        app:layout_constraintTop_toBottomOf="@id/paymentStatusLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/cancelEnroll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cancel"
+        android:textSize="20dp"
+        android:background="@color/lightTransparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:padding="10dp"
+        android:layout_marginBottom="20dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
